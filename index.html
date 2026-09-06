@@ -1,1 +1,13 @@
+<div id="content-danv">Đang tải tài liệu lưu trữ về sự kiện DANV...</div>
 
+<script>
+  fetch('vụ%20DANV%20cực%20căng%20và%20đây%20là%20các%20thông%20tin%20tui%20thu%20thập%20đc_%20on%20Scratch.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('content-danv').innerHTML = data;
+    })
+    .catch(error => {
+      document.getElementById('content-danv').innerHTML = 'Không thể tải file lưu trữ sự kiện!';
+      console.error(error);
+    });
+</script>
